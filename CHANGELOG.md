@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.20.2](https://github.com/ieedan/shadcn-svelte-extras/compare/v1.20.1...v1.20.2) (2025-02-21)
+
+
+### Bug Fixes
+
+* `hooks/use-boolean` add function bindings ([d2ce6fc](https://github.com/ieedan/shadcn-svelte-extras/commit/d2ce6fc0d34fda8bdcf4d6ce93c82849f0e75c54))
+
 ## [1.20.1](https://github.com/ieedan/shadcn-svelte-extras/compare/v1.20.0...v1.20.1) (2025-02-20)
 
 
