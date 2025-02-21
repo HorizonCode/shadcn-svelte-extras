@@ -10,14 +10,14 @@
 	};
 
 	let { class: className }: Props = $props();
+
+	const commandState = commandContext.get();
 </script>
 
 <Button
 	variant="outline"
 	class={cn('flex w-full place-items-center justify-between px-2', className)}
-	onclick={() => {
-		commandContext.set(true);
-	}}
+	onclick={commandState.setTrue}
 >
 	<span class="flex place-items-center gap-2 text-muted-foreground">
 		<Search class="inline size-4" />

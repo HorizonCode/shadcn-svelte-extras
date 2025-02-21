@@ -29,7 +29,7 @@
 		code={`\<script lang="ts"\>
     import { UseBoolean } from '$lib/hooks/use-boolean.svelte';
 
-    const enabled = new UseBoolean();
+    const enabled = new UseBoolean(true);
 \<\/script\>
 
 <button onclick={enabled.setFalse}>

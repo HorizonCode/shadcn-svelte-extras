@@ -19,10 +19,11 @@
 	import SearchButton from '$lib/components/search-button.svelte';
 	import { LightSwitch } from '$lib/components/ui/light-switch';
 	import { dev } from '$app/environment';
+	import { UseBoolean } from '$lib/hooks/use-boolean.svelte';
 
 	let { children } = $props();
 
-	commandContext.set(false);
+	const commandState = commandContext.set(new UseBoolean(false));
 
 	const getCurrentDoc = (
 		url: URL
@@ -50,9 +51,7 @@
 	use:shortcut={{
 		ctrl: true,
 		key: 'k',
-		callback: () => {
-			commandContext.set(true);
-		}
+		callback: commandState.setTrue
 	}}
 />
 

@@ -22,6 +22,10 @@ export class UseBoolean {
 
 	constructor(defaultValue = false) {
 		this.#current = defaultValue;
+
+		this.toggle = this.toggle.bind(this);
+		this.setTrue = this.setTrue.bind(this);
+		this.setFalse = this.setFalse.bind(this);
 	}
 
 	/** Toggles the current state */
@@ -36,7 +40,7 @@ export class UseBoolean {
 
 	/** Sets the current state to false */
 	setFalse() {
-		this.#current = true;
+		this.#current = false;
 	}
 
 	get current() {
