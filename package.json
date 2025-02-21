@@ -38,6 +38,7 @@
 		"mode-watcher": "^0.5.1",
 		"nanoid": "^5.1.0",
 		"package-manager-detector": "^0.2.9",
+		"pdfjs-dist": "^4.10.38",
 		"prettier": "^3.5.1",
 		"prettier-plugin-svelte": "^3.3.3",
 		"prettier-plugin-tailwindcss": "^0.6.11",

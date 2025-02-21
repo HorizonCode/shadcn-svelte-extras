@@ -123,6 +123,14 @@ const map: Record<string, Route[]> = {
 			source: 'src/lib/components/ui/nlp-date-input/nlp-date-input.svelte'
 		},
 		{
+			name: 'PDF Preview',
+			description: 'A pdf previewer component.',
+			href: '/components/pdf-preview',
+			specifier: 'ui/pdf-preview',
+			source: 'src/lib/components/ui/pdf-preview',
+			status: 'New'
+		},
+		{
 			name: 'Phone Input',
 			description: 'A phone number input component.',
 			href: '/components/phone-input',
